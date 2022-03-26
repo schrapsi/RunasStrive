@@ -59,6 +59,7 @@ public enum RunaSkillEnum {
 
     /**
      * Constructor the Enum
+     *
      * @param name of the Skill
      */
     RunaSkillEnum(String name) {

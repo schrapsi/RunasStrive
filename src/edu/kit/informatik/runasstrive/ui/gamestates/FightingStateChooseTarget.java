@@ -64,7 +64,7 @@ public class FightingStateChooseTarget extends GameState {
     @Override
     public GameState nextGameState() {
         if (runa.getNextSkill().getType() == RunaSkillEnum.LIGHTNING
-                || runa.getNextSkill().getType()== RunaSkillEnum.WATER
+                || runa.getNextSkill().getType() == RunaSkillEnum.WATER
                 || runa.getNextSkill().getType() == RunaSkillEnum.FIRE
                 || runa.getNextSkill().getType() == RunaSkillEnum.ICE) {
             return new FightingStateEvaluation(game, runa);

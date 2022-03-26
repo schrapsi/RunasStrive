@@ -16,10 +16,10 @@ public final class InputParser {
     /**
      * This Method parses the Input
      *
-     * @param input  of the Player
+     * @param input                   of the Player
      * @param amountOfExpectedNumbers expected numbers
-     * @param upperRange upper range of the allowed input
-     * @param allowedDuplicates if the input allows duplicates
+     * @param upperRange              upper range of the allowed input
+     * @param allowedDuplicates       if the input allows duplicates
      * @return the parsed numbers as Integer array
      * @throws IllegalArgumentException if the parsing failed
      */
@@ -60,7 +60,7 @@ public final class InputParser {
     /**
      * Special parsing for the Healing state because the amount of numbers is decided by the player.
      *
-     * @param input String player input
+     * @param input      String player input
      * @param upperRange upper range of the allowed input
      * @return the parsed numbers as Integer array
      * @throws IllegalArgumentException if the parsing failed
