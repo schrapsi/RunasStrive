@@ -11,6 +11,9 @@ import edu.kit.informatik.runasstrive.ui.ressources.Message;
  */
 public class Application {
 
+    private Application() {
+    }
+
     /**
      * Main method of the program
      *
