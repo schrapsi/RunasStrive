@@ -92,17 +92,17 @@ public final class Util {
     public static List<Skill> fillSkillList(int level) {
 
         ArrayList<Skill> skillList = new ArrayList<>();
-        skillList.add(new SlashSkill(SkillEnum.SLASH, level));
-        skillList.add(new SwingSkill(SkillEnum.SWING, level));
-        skillList.add(new ThrustSkill(SkillEnum.THRUST, level));
-        skillList.add(new PierceSkill(SkillEnum.PIERCE, level));
-        skillList.add(new ParrySkill(SkillEnum.PARRY, level));
-        skillList.add(new FocusSkill(SkillEnum.FOCUS, level));
-        skillList.add(new ReflectSkill(SkillEnum.REFLECT, level));
-        skillList.add(new WaterSkill(SkillEnum.WATER, level));
-        skillList.add(new IceSkill(SkillEnum.ICE, level));
-        skillList.add(new FireSkill(SkillEnum.FIRE, level));
-        skillList.add(new LightningSkill(SkillEnum.LIGHTNING, level));
+        skillList.add(new SlashSkill(RunaSkillEnum.SLASH, level));
+        skillList.add(new SwingSkill(RunaSkillEnum.SWING, level));
+        skillList.add(new ThrustSkill(RunaSkillEnum.THRUST, level));
+        skillList.add(new PierceSkill(RunaSkillEnum.PIERCE, level));
+        skillList.add(new ParrySkill(RunaSkillEnum.PARRY, level));
+        skillList.add(new FocusSkill(RunaSkillEnum.FOCUS, level));
+        skillList.add(new ReflectSkill(RunaSkillEnum.REFLECT, level));
+        skillList.add(new WaterSkill(RunaSkillEnum.WATER, level));
+        skillList.add(new IceSkill(RunaSkillEnum.ICE, level));
+        skillList.add(new FireSkill(RunaSkillEnum.FIRE, level));
+        skillList.add(new LightningSkill(RunaSkillEnum.LIGHTNING, level));
         return skillList;
 
     }

@@ -3,7 +3,7 @@ package edu.kit.informatik.runasstrive.model;
 import edu.kit.informatik.runasstrive.model.monsters.Monster;
 import edu.kit.informatik.runasstrive.model.ressources.CharacterClass;
 import edu.kit.informatik.runasstrive.model.skills.Skill;
-import edu.kit.informatik.runasstrive.model.ressources.SkillEnum;
+import edu.kit.informatik.runasstrive.model.ressources.RunaSkillEnum;
 import edu.kit.informatik.runasstrive.model.skills.magical.ReflectSkill;
 import edu.kit.informatik.runasstrive.model.skills.physical.ParrySkill;
 import edu.kit.informatik.runasstrive.ui.ressources.Message;
@@ -67,7 +67,7 @@ public class Runa {
 
         int damage = rawDamage;
 
-        if (nextSkill.getType().equals(SkillEnum.REFLECT)) {
+        if (nextSkill.getType().equals(RunaSkillEnum.REFLECT)) {
             if (damage > REFLECT_MULTIPLIER * nextSkill.getSkillLevel()) {
                 damage = damage - (REFLECT_MULTIPLIER * nextSkill.getSkillLevel());
                 healthPoints -= damage;
@@ -103,7 +103,7 @@ public class Runa {
 
         int damage = rawDamage;
 
-        if (nextSkill.getType().equals(SkillEnum.PARRY)) {
+        if (nextSkill.getType().equals(RunaSkillEnum.PARRY)) {
             if (damage > PARRY_MULTIPLIER * nextSkill.getSkillLevel()) {
                 damage = damage - (PARRY_MULTIPLIER * nextSkill.getSkillLevel());
             } else {

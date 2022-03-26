@@ -55,6 +55,10 @@ public enum MonsterSkillEnum {
 
     private String name;
 
+    /**
+     * Constructor the Enum
+     * @param name of the Monster Skill
+     */
     MonsterSkillEnum(String name) {
         this.name = name;
     }

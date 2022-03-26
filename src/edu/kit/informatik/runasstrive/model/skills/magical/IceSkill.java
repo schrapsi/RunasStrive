@@ -4,7 +4,7 @@ import edu.kit.informatik.runasstrive.model.Runa;
 import edu.kit.informatik.runasstrive.model.monsters.Monster;
 import edu.kit.informatik.runasstrive.model.ressources.Type;
 import edu.kit.informatik.runasstrive.model.skills.Skill;
-import edu.kit.informatik.runasstrive.model.ressources.SkillEnum;
+import edu.kit.informatik.runasstrive.model.ressources.RunaSkillEnum;
 
 /**
  * This class models the Skill: Ice for Runa
@@ -22,7 +22,7 @@ public class IceSkill extends Skill {
      * @param name       of the Skill as enum
      * @param skillLevel level of the skill
      */
-    public IceSkill(SkillEnum name, int skillLevel) {
+    public IceSkill(RunaSkillEnum name, int skillLevel) {
         super(name, skillLevel, false, 1);
     }
 

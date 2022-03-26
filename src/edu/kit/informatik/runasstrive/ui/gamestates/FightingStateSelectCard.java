@@ -2,7 +2,7 @@ package edu.kit.informatik.runasstrive.ui.gamestates;
 
 import edu.kit.informatik.runasstrive.model.RunasStrive;
 import edu.kit.informatik.runasstrive.model.Runa;
-import edu.kit.informatik.runasstrive.model.ressources.SkillEnum;
+import edu.kit.informatik.runasstrive.model.ressources.RunaSkillEnum;
 import edu.kit.informatik.runasstrive.ui.ressources.InputParser;
 import edu.kit.informatik.runasstrive.ui.ressources.Message;
 
@@ -56,10 +56,10 @@ public class FightingStateSelectCard extends GameState {
             nextGameState = new FightingStateEvaluation(game, runa);
         } else if (game.getMonsterInCurrentStage().size() == 1) {
             game.setCurrentTarget(0);
-            if (runa.getNextSkill().getType().equals(SkillEnum.LIGHTNING)
-                    || runa.getNextSkill().getType().equals(SkillEnum.WATER)
-                    || runa.getNextSkill().getType().equals(SkillEnum.FIRE)
-                    || runa.getNextSkill().getType().equals(SkillEnum.ICE)) {
+            if (runa.getNextSkill().getType().equals(RunaSkillEnum.LIGHTNING)
+                    || runa.getNextSkill().getType().equals(RunaSkillEnum.WATER)
+                    || runa.getNextSkill().getType().equals(RunaSkillEnum.FIRE)
+                    || runa.getNextSkill().getType().equals(RunaSkillEnum.ICE)) {
                 nextGameState = new FightingStateEvaluation(game, runa);
             } else {
                 nextGameState = new FightingStateDiceRoll(game, runa);

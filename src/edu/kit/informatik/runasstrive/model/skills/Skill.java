@@ -2,7 +2,7 @@ package edu.kit.informatik.runasstrive.model.skills;
 
 import edu.kit.informatik.runasstrive.model.Runa;
 import edu.kit.informatik.runasstrive.model.monsters.Monster;
-import edu.kit.informatik.runasstrive.model.ressources.SkillEnum;
+import edu.kit.informatik.runasstrive.model.ressources.RunaSkillEnum;
 
 import java.util.Objects;
 
@@ -29,7 +29,7 @@ public abstract class Skill {
     /**
      * name of the skill as enum
      */
-    protected SkillEnum name;
+    protected RunaSkillEnum runaSkillName;
 
     /**
      * public constructor for the skill
@@ -39,8 +39,8 @@ public abstract class Skill {
      * @param isDefensive if the skill is defensive or not
      * @param cost        cost of the skill
      */
-    protected Skill(SkillEnum name, int skillLevel, boolean isDefensive, int cost) {
-        this.name = name;
+    protected Skill(RunaSkillEnum name, int skillLevel, boolean isDefensive, int cost) {
+        this.runaSkillName = name;
         this.skillLevel = skillLevel;
         this.isDefensive = isDefensive;
         this.cost = cost;
@@ -66,21 +66,12 @@ public abstract class Skill {
     }
 
     /**
-     * Gets name
-     *
-     * @return value of name
-     */
-    public String getName() {
-        return name.getName();
-    }
-
-    /**
      * returns the type of the Skill (Enum of the skill name)
      *
      * @return the name
      */
-    public SkillEnum getType() {
-        return name;
+    public RunaSkillEnum getType() {
+        return runaSkillName;
     }
 
     /**
@@ -103,7 +94,7 @@ public abstract class Skill {
 
     @Override
     public String toString() {
-        return name.getName() + "(" + skillLevel + ")";
+        return runaSkillName.getName() + "(" + skillLevel + ")";
     }
 
     @Override
@@ -111,11 +102,11 @@ public abstract class Skill {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Skill skill = (Skill) o;
-        return skillLevel == skill.skillLevel && name == skill.name;
+        return skillLevel == skill.skillLevel && runaSkillName == skill.runaSkillName;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(skillLevel, name);
+        return Objects.hash(skillLevel, runaSkillName);
     }
 }

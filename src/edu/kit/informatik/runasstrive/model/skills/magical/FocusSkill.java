@@ -3,7 +3,7 @@ package edu.kit.informatik.runasstrive.model.skills.magical;
 import edu.kit.informatik.runasstrive.model.Runa;
 import edu.kit.informatik.runasstrive.model.monsters.Monster;
 import edu.kit.informatik.runasstrive.model.skills.Skill;
-import edu.kit.informatik.runasstrive.model.ressources.SkillEnum;
+import edu.kit.informatik.runasstrive.model.ressources.RunaSkillEnum;
 
 /**
  * This class models the Skill: Focus for Runa
@@ -19,7 +19,7 @@ public class FocusSkill extends Skill {
      * @param name       of the Skill as enum
      * @param skillLevel level of the skill
      */
-    public FocusSkill(SkillEnum name, int skillLevel) {
+    public FocusSkill(RunaSkillEnum name, int skillLevel) {
         super(name, skillLevel, true, 0);
     }
 

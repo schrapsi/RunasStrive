@@ -7,7 +7,7 @@ package edu.kit.informatik.runasstrive.model.ressources;
  * @author ucfoh
  * @version 1.0
  */
-public enum SkillEnum {
+public enum RunaSkillEnum {
 
     /**
      * SLASH Skill
@@ -55,9 +55,13 @@ public enum SkillEnum {
     LIGHTNING("Lightning");
 
 
-    private String name;
+    private final String name;
 
-    SkillEnum(String name) {
+    /**
+     * Constructor the Enum
+     * @param name of the Skill
+     */
+    RunaSkillEnum(String name) {
         this.name = name;
     }
 

@@ -6,7 +6,7 @@ import edu.kit.informatik.runasstrive.model.monsters.level1.SpiderKing;
 import edu.kit.informatik.runasstrive.model.monsters.level2.MegaSaurus;
 import edu.kit.informatik.runasstrive.model.ressources.Util;
 import edu.kit.informatik.runasstrive.model.skills.Skill;
-import edu.kit.informatik.runasstrive.model.ressources.SkillEnum;
+import edu.kit.informatik.runasstrive.model.ressources.RunaSkillEnum;
 import edu.kit.informatik.runasstrive.model.skills.magical.FocusSkill;
 import edu.kit.informatik.runasstrive.model.skills.magical.ReflectSkill;
 import edu.kit.informatik.runasstrive.model.skills.magical.WaterSkill;
@@ -69,16 +69,16 @@ public class RunasStrive {
 
         switch (runa.getCharacterClass()) {
             case WARRIOR:
-                classSkill1 = new ThrustSkill(SkillEnum.THRUST, level);
-                classSkill2 = new ParrySkill(SkillEnum.PARRY, level);
+                classSkill1 = new ThrustSkill(RunaSkillEnum.THRUST, level);
+                classSkill2 = new ParrySkill(RunaSkillEnum.PARRY, level);
                 break;
             case MAGE:
-                classSkill1 = new FocusSkill(SkillEnum.FOCUS, level);
-                classSkill2 = new WaterSkill(SkillEnum.WATER, level);
+                classSkill1 = new FocusSkill(RunaSkillEnum.FOCUS, level);
+                classSkill2 = new WaterSkill(RunaSkillEnum.WATER, level);
                 break;
             case PALADIN:
-                classSkill1 = new SlashSkill(SkillEnum.SLASH, level);
-                classSkill2 = new ReflectSkill(SkillEnum.REFLECT, level);
+                classSkill1 = new SlashSkill(RunaSkillEnum.SLASH, level);
+                classSkill2 = new ReflectSkill(RunaSkillEnum.REFLECT, level);
                 break;
             default:
                 throw new IllegalStateException();

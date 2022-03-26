@@ -2,7 +2,7 @@ package edu.kit.informatik.runasstrive.ui.gamestates;
 
 import edu.kit.informatik.runasstrive.model.RunasStrive;
 import edu.kit.informatik.runasstrive.model.Runa;
-import edu.kit.informatik.runasstrive.model.ressources.SkillEnum;
+import edu.kit.informatik.runasstrive.model.ressources.RunaSkillEnum;
 import edu.kit.informatik.runasstrive.ui.ressources.InputParser;
 import edu.kit.informatik.runasstrive.ui.ressources.Message;
 
@@ -63,10 +63,10 @@ public class FightingStateChooseTarget extends GameState {
 
     @Override
     public GameState nextGameState() {
-        if (runa.getNextSkill().getType().equals(SkillEnum.LIGHTNING)
-                || runa.getNextSkill().getType().equals(SkillEnum.WATER)
-                || runa.getNextSkill().getType().equals(SkillEnum.FIRE)
-                || runa.getNextSkill().getType().equals(SkillEnum.ICE)) {
+        if (runa.getNextSkill().getType() == RunaSkillEnum.LIGHTNING
+                || runa.getNextSkill().getType()== RunaSkillEnum.WATER
+                || runa.getNextSkill().getType() == RunaSkillEnum.FIRE
+                || runa.getNextSkill().getType() == RunaSkillEnum.ICE) {
             return new FightingStateEvaluation(game, runa);
         } else {
             return new FightingStateDiceRoll(game, runa);
