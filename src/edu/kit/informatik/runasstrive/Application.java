@@ -9,7 +9,7 @@ import edu.kit.informatik.runasstrive.ui.ressources.Message;
  * @author ucfoh
  * @version 1.0
  */
-public class Application {
+public final class Application {
 
     private Application() {
     }
