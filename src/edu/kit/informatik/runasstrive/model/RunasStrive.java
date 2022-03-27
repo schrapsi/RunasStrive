@@ -126,7 +126,7 @@ public class RunasStrive {
     }
 
     /**
-     * Method evaluates the damage after the fighting state
+     * Method that evaluates the results after the fighting state
      */
     public void evaluate() {
 
